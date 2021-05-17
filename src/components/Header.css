@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    height: 3rem;
+    background: linear-gradient(to right bottom, #9c79fd, #7646fa);
+    color: #fff;
+    font-size: 14px;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons",
+        "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.header__left {
+    color: #fff;
+    text-decoration: none;
+}

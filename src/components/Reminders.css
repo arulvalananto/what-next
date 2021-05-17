@@ -1,0 +1,116 @@
+/* Reminders Component */
+
+.reminders {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    align-items: center;
+    font-size: 14px;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons",
+        "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.reminders__notFound {
+    width: 100vw;
+    text-align: center;
+
+    font-size: 16px;
+}
+.red-text {
+    color: red;
+}
+.reminders__spinnerContainer {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.reminders__spinner {
+    color: #9a76fd;
+}
+
+/* Reminder Component */
+
+.reminder {
+    padding: 0.5rem;
+    background: #fff;
+    margin: 0.5rem;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 300px;
+    max-width: 300px;
+}
+.reminder__description {
+    padding: 0.5rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    outline-color: rgba(94, 94, 190, 0.3);
+}
+.reminder__descriptionEditable {
+    display: none;
+}
+.reminder__content {
+    padding: 0.2rem;
+    width: 97%;
+    border-color: #9a76fd91;
+    outline-color: #9a76fd91;
+    resize: none;
+    font-size: 14px;
+    border-radius: 3px;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons",
+        "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.reminder__updatePopup {
+    margin-top: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reminder__updatePopupLeft {
+    color: red;
+    font-weight: 600;
+}
+
+.reminder__updateClear {
+    color: orangered;
+}
+.reminder__updateProceed {
+    color: #00b300;
+    margin-left: 1rem;
+}
+.reminder__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    color: lightgray;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.reminder__footerLeft {
+    flex: 0.2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reminder__footerRight {
+    flex: 0.8;
+    display: flex;
+    justify-content: flex-end;
+}
+.reminder__timestamp {
+    font-size: 10px;
+    display: none;
+    color: gray;
+}
+.reminder:hover .reminder__timestamp {
+    display: block;
+}
+.reminder__deleteIcon:hover {
+    color: orangered;
+}
+.reminder__updateIcon:hover,
+.reminder__updateIcon--active {
+    color: #fc9a25;
+}
